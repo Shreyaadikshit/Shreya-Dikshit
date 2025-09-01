@@ -9,30 +9,49 @@ body {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 100px 20px;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  z-index: -1;
+}
+
+.hero-content {
+  max-width: 600px;
+  color: #fff;
 }
 
 .profile-photo {
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #fff;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  border: 5px solid #fff;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
   margin-bottom: 20px;
 }
 
+/* Hero text */
 .hero h1 {
   font-size: 3rem;
-  margin: 10px 0;
+  margin: 0;
 }
 
 .hero p {
   font-size: 1.2rem;
-  max-width: 600px;
-  margin: 0 auto;
+  margin-top: 15px;
 }
 
 /* Sections */
